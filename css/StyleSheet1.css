@@ -2,18 +2,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 /**1. Navigation*/
 nav {
-    max-width: 100%;
-    height: 80px;
+    position: absolute;
+    left: 0;
+    width: 100vw;
     display: flex;
+    padding: 30px 100px;
     justify-content: space-between;
     align-items: center;
-    background-color:aliceblue;
+    z-index: 100;
+    
 }
 
 
@@ -21,6 +24,7 @@ nav {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
+        
     }
 
         nav ul li {
@@ -28,22 +32,20 @@ nav {
         }
 
             nav ul li a {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 color: #11456f;
                 text-decoration: none;
-                font-size: 22px;
-                font-weight: bolder;
-                border-radius: 30px;
+                font-size: 20px;
+                font-weight: 600;
+                border-radius: 15px;
                 transition: all 0.3s ease;
-                padding: 10px 45px;
+                padding: 6px 15px;
+                margin-right: 50px;
             }
 
                 nav ul li a.active,
                 nav ul li a:hover {
-                    color: #000;
-                  
+                    background: #11456f;
+                    color: #fff;
                 }
 
     nav .menu-btn i {
@@ -57,13 +59,13 @@ input[type="checkbox"] {
     display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
     nav {
         padding: 0 40px 0 50px;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     nav .menu-btn i {
         display: block;
     }
@@ -74,7 +76,7 @@ input[type="checkbox"] {
 
     nav ul {
         position: absolute;
-        top: 580px;
+        top: 0px;
         left: -100%;
         background: #111;
         height: 100vh;
@@ -107,16 +109,9 @@ input[type="checkbox"] {
 
     nav ul li a.active,
     nav ul li a:hover {
-       
         color: #fff;
     }
 }
-
-
-
-
-
-
 
 
 
@@ -125,13 +120,13 @@ input[type="checkbox"] {
 
 .main {
     margin-top: 0px;
-    width: 100%;
+    width: 100vw;
 }
 
 .wrapper,
 .slide {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 600px;
 }
 
@@ -142,14 +137,14 @@ input[type="checkbox"] {
         content: "";
         position: relative;
         height: 600px;
-        width: 100%;
+        width: 100vw;
         background-color: rgba(0, 0, 0, 0.4);
         z-index: 10;
     }
 
     .slide .image {
         height: 600px;
-        width: 100%;
+        width: 100vw;
         object-fit: cover;
     }
 
@@ -159,7 +154,7 @@ input[type="checkbox"] {
         right: 200px;
         transform: translate(-50%, -50%);
         text-align: center;
-        width: 100%;
+        width: 100vw;
         z-index: 100;
     }
 
@@ -259,7 +254,7 @@ a.button {
     margin-left: 50px;
    font-size:40px;
     height: 100px;
-    color:#11456f;
+    color:#0586a9;
 }
 
 
@@ -286,6 +281,29 @@ a.button {
 }
 
     .container10 h4 {
+        font-size: 20px;
+        margin-top: 15px;
+        text-indent: 2em;
+        font-family: YouYuan;
+        line-height: 2;
+    }
+
+
+#intro {
+    position: relative;
+    margin-top: 100px;
+    height: 900px;
+    width: 100vw;
+    background-color: #d6d9d9;
+}
+.container20 {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 70%;
+}
+
+    .container20 h4 {
         font-size: 20px;
         margin-top: 15px;
         text-indent: 2em;
@@ -621,8 +639,8 @@ table {
 /* Sponsorship 正文 */
 .container1 {
     position: relative;
-    margin-top: 150px;
-    margin-left: 200px;
+    margin-top: 200px;
+    margin-left: 220px;
     width: 70%;
 }
 
@@ -727,7 +745,7 @@ tr {
 /*联系我们 正文 */
 .container3 {
     position: relative;
-    margin-top: 120px;
+    margin-top: 250px;
     margin-left: 200px;
     width: 75%
 }
