@@ -50,7 +50,8 @@ nav {
 
     nav .menu-btn i {
         color: #11456f;
-        font-size: 22px;
+        font-size: 30px;
+        margin-top:15px;
         cursor: pointer;
         display: none;
     }
@@ -58,6 +59,8 @@ nav {
 input[type="checkbox"] {
     display: none;
 }
+
+
 
 @media (max-width: 1070px) {
     nav {
@@ -74,12 +77,13 @@ input[type="checkbox"] {
         content: "\f00d";
     }
 
+
     nav ul {
         position: absolute;
-        top: 0px;
+        top: 50px;
         left: -100%;
         background: #111;
-        height: 100vh;
+        height: 90vh;
         width: 100%;
         text-align: center;
         display: block;
@@ -268,7 +272,7 @@ a.button {
 #video {
     position: relative;
     margin-top:100px;
-    height: 650px;
+    
     width: 100vw;
     background-color: #d6d9d9;
 }
@@ -276,7 +280,7 @@ a.button {
 .container10 {
     position: relative;
     margin-top: 100px;
-    margin-left: 200px;
+    margin-left: 190px;
     width: 70%;
 }
 
@@ -292,14 +296,15 @@ a.button {
 #intro {
     position: relative;
     margin-top: 100px;
-    height: 900px;
+   
     width: 100vw;
     background-color: #d6d9d9;
 }
 .container20 {
     position: relative;
     margin-top: 100px;
-    margin-left: 200px;
+   
+    margin-left: 190px;
     width: 70%;
 }
 
@@ -640,7 +645,7 @@ table {
 .container1 {
     position: relative;
     margin-top: 200px;
-    margin-left: 220px;
+    margin-left: 200px;
     width: 70%;
 }
 
