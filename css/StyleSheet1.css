@@ -263,6 +263,7 @@ a.button {
 
 
 
+
 #video {
     position: relative;
     margin-top:100px;
@@ -325,7 +326,7 @@ table {
     margin-bottom: 50px;
     border-spacing: 0;
     border-collapse: collapse;
-    border: 1px solid #0586a9;
+    border: 1.5px solid #0586a9;
     background-color: transparent;
 }
 
