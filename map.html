@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  
+    <link rel="stylesheet" href="https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css" />
+    <style>
+        html,
+        body,
+        #container {
+            width: 700px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <div class="input-card" style="width:13rem">
+      
+      
+    </div>
+    <script src="https://cache.amap.com/lbs/static/es5.min.js"></script>
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=HGLWF6PzYSzXPtkS9e34UFTxgNI4YySt"></script>
+    <script>
+    //初始化地图
+    var map = new AMap.Map('container', {
+      resizeEnable: true,
+        center: [117.177697, 39.118023],
+      lang: "en" //可选值：en，zh_en, zh_cn
+    });
+
+    //绑定radio点击事件
+    var radios = document.querySelectorAll("#lang input");
+    radios.forEach(function(ratio) {
+      ratio.onclick = setLang;
+    });
+
+    function setLang() {
+      map.setLang(this.id);
+    }
+    </script>
+</body>
+
+</html>

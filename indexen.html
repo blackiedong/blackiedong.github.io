@@ -1,13 +1,16 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="css/StyleSheet1.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <title>天津大学 | FIRST 国际会议</title>
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="JS/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -72,12 +75,15 @@
         <label for="click" class="menu-btn">
             <i class="fas fa-bars"></i>
         </label>
+        <img src="img/logo.jpg" width="350" height="130">
         <ul>
             <li><a class="active" href="#">Home</a></li>
             <li><a href="AboutUsen.html">About FIRST</a></li>
-            <li><a href="EventHighlightsen.html">Schedule</a></li>
-            <li><a href="Sponsorsen.html">Sponsorship</a></li>
+            <li><a href="EventHighlightsen.html">Program</a></li>
+            <li><a href="Speechen.html">Keynote</a></li>
+            <li><a href="Researchen.html">Research</a></li>
             <li><a href="PartnerUsen.html">Partner Us</a></li>
+            <li><a href="Sponsorsen.html">Sponsors</a></li>
             <li><a href="ContactUsen.html">Contact Us</a></li>
             <li><a href="index.html" class='fas' style='font-size:24px'><i class='fas fa-language'></i></a> </li>
 
@@ -86,8 +92,6 @@
 
 
 
-    <!-- 活动slogan/logo -->
-    <img alt="" src="img/logo.jpg" width="520" height="420" style="position:relative; top:100px;left:450px" />
 
 
     <!--活动介绍 -->
@@ -95,49 +99,80 @@
         <div class="container20">
             <br />
             <br />
-            <h1>2023 FIRST INTERNATIONAL CONFERENCE</h1>
+            <h1>2023 FIRST International Conference</h1>
+            <h2><font size="4" color="#11456f">Tianjin|China</font></h2><br />
             <br />
-            <p><font size="5"><strong>Theme：INTERDISCIPLINARITY <br />&nbsp;&nbsp; &nbsp; The Convergence of Technologies (Future Communications and Chip Design)</strong></font></p>
+            <h3>Theme：<strong> Interdisciplinarity: The Fusion of Technologies (Semiconductor, Artificial Intelligence, Internet-of-Things, and Communications)</strong></font></h3>
             <br />
-            <h2><font size="4" color="#11456f">Oct 2023&nbsp;&nbsp; TIANJIN UNIVERSITY</font></h2><br />
+            <h3>Main Organiser：<strong> Tianjin University</strong></h3>
+            <br />
+            <h3>Date:<strong>30 Oct 2023 (Mon) to 31 Oct 2023 (Tue)</strong></h3>
+            <br />
+            <h3>Venue：<strong> Student Center, Tianjin University, No. 92 Weijin Road, Nankai District, Tianjin Zip Code: 300072</strong></h3>
+            <br />
             <stong><hr /></stong>
             <br />
+            <img alt="" src="img/huodong.png" style="margin-left:170px" width="700" height="350" />
 
             <br />
-            <p><font size="4"><strong></strong></font></p>
-            <h4>
-                The theme of the first FIRST International Conference is <strong>INTERDISCIPLINARITY: The Convergence of Technologies (Future Communications and Chip Design)</strong>
-                Interdisciplinarity draws knowledge from different fields and creates new areas by working across boundaries.  Product development is becoming exceedingly complex and innovative products require unrelated technologies combined in new ways.
-
-                The semiconductor industry has long been a leader in connecting things in the factory while the communication industry has always been a front-runner in connecting people in our daily lives.  They are at the heart of technology innovation.
-
-            </h4>
-
-            <h4>
-                This FIRST international conference will bring together scholars and experts from home and abroad who have made outstanding contributions in the semiconductor field, aiming to discuss open issues and propose new solutions to solve the challenges of future communication systems and chip design. Specifically, it will introduce the role of semiconductors in the future of communications and discuss how the semiconductor and communications industries can become stronger after the COVID-19 pandemic.
-
-
-            </h4>
-
 
             <br />
         </div>
+        <div id="map" style="margin-left:360px;width:700px; height:400px">
 
+            <script type="text/javascript"
+                    src="https://api.map.baidu.com/api?v=2.0&amp;ak=HGLWF6PzYSzXPtkS9e34UFTxgNI4YySt"></script>
+            <script>
+                /* Act on the event */
+                $('#mark').show();
+                var map = new BMap.Map('map',{lang:"en"});
+                var point = new BMap.Point(117.177697, 39.118023);// 120.73717 经度  //31.25795 纬度
+                map.centerAndZoom(point, 15);
+                map.enableScrollWheelZoom(true); // 开启鼠标滚轮缩放
+                var marker = new BMap.Marker(point); // 创建标注
+                map.addOverlay(marker); // 将标注添加到地图中
+                marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+                var opts = {
+                    position: point, // 指定文本标注所在的地理位置
+                    offset: new BMap.Size(20, -30), //设置文本偏移量
+                };
+                var label = new BMap.Label('Student Center, Tianjin University', opts); // 创建文本标注对象
+                label.setStyle({
+                    color: '#006abe',
+                    fontSize: '16px',
+                    height: 'auto',
+                    border: '1px solid #fff',
+                    padding: '12px 12px',
+                    fontWeight: 'bold',
+                    lineHeight: '16px',
+                    fontFamily: 'SourceHanSansCN-Regular',
+                });
+                map.addOverlay(label);
+                window.setTimeout(function () {
+                    map.panTo(new BMap.Point(117.177697, 39.118023));
+                }, 2000);</script>
+            <br />
+
+
+        </div>
+        <br />  <br />
+
+        <br />
     </div>
-
-
+    <!--版权声明：本文为CSDN博主「王工丶要专注」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+    原文链接：https://blog.csdn.net/qq_44224811/article/details/128735789-->
     <!--正文-->
     <div class="container1">
-        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction of Conference Organizer</h2>
+        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conference Organizer</h2>
         <br />
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
+        <table border="1" cellpadding="1" cellspacing="1">
             <tbody>
                 <tr>
                     <td>
                         <p>
                             <img alt="" src="img/TJU.jpg" width="200" height="200" /><br />
                             <strong>Tianjin University</strong><br />
-                        <p>It is one of the first batch of national key universities directly under the Ministry of Education of the People's Republic of China, one of the national "double first-class" universities, one of the national "Project 211" and "Project 985" universities, one of the Chinese Academy of Engineering and one of the 10 pilot universities of the Ministry of Education in engineering education reform, and one of the first batch of independent examination units of degree authorization. It has been selected into the national "Strong Base Plan", "2011 Plan", "111 Plan", "Excellent Engineer Education and Training Plan", National innovative Experimental Plan for College students, National Innovation and Entrepreneurship Training Plan for College students, National public graduate Project for Building high-level universities, new engineering research and practice Project, the first batch of scientific and technological achievements transformation and technology transfer bases of higher institutions, and the country College students' cultural Quality Education base, one of the first national demonstration universities to deepen the reform of innovation and entrepreneurship education, one of the eight old building universities, founding member of China-Asean Engineering University Alliance, China and Central European Countries Science and Technology Innovation University Alliance.</p>
+                        <p>It is one of the first batch of national key universities directly under the Ministry of Education of the People's Republic of China, one of the national "double first-class" universities, one of the national "Project 211" and "Project 985" universities, one of the Chinese Academy of Engineering and one of the 10 pilot universities of the Ministry of Education in engineering education reform, and one of the first batch of independent examination units of degree authorization. It has been selected into the national "Strong Base Plan", "2011 Plan", "111 Plan", "Excellent Engineer Education and Training Plan", National innovative Experimental Plan for College students, National Innovation and Entrepreneurship Training Plan for College students, National public graduate Project for Building high-level universities, new engineering research and practice Project, the first batch of scientific and technological achievements transformation and technology transfer bases of higher institutions, and the country College students' cultural Quality Education base, one of the first national demonstration universities to deepen the reform of innovation and entrepreneurship education, one of the eight old building universities, founding member of China-ASEAN Engineering University Alliance, China and Central European Countries Science and Technology Innovation University Alliance.</p>
 
 
 
@@ -145,249 +180,60 @@
                 </tr>
             </tbody>
         </table>
-        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main Information about Conference Leader</h2>
+
         <br />
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
+        <table border="1" cellpadding="1" cellspacing="1">
             <tbody>
                 <tr>
                     <td>
+                        <p>
+                            <img alt="" src="img/collegelogo.jpg" width="200" height="200" /><br />
+                            <strong>School of Microelectronics</strong><br />
+                        <p>
+                            The School of Microelectronics, Tianjin University, is one of the 26 national exemplary Schools of Microelectronics. It was founded in September 2015 based on School of Electronic and Information Engineering. On 11th November 2016, it became an independent school with 52 staff, including 14 professors, 16 associate professors and 7 lecturers. 48 staff are master tutors, and 28 staff are doctor tutor. There more than 800 undergraduate and graduate students. The school’s atmosphere is rigorous and alive. We cultivate students' international vision and cross-cultural communication skills by bilingual education, 3+1 years international cooperate educating and joint school with Georgia Institute of Technology. Our students have performed well in various technology, culture and sports competitions such as Champion of international microwave conference student design contest modelling project; Special prize of Tianjin innovation and entrepreneurship scholarship; The special prize of “Bao Gang” scholarship; National Champion and international third place of the China-UK business plan competition; and First prize of China university bio-networking entrepreneurship competition.
+                        </p>
+                        <p>
+                            Every year, over 55% graduates get offer to study on in both national and international reputable university. The employment rate of graduates is about 98%. Most graduates have job offers from leading companies such as China aerospace science and industry group, China aerospace science and technology group, China electronics technology group strategic key units, China mobile, China unicom, ZTE, Huawei, Purple light show sharp, HiSilicon semiconductors, Grace wisdom pu, Unigroup, NXP Semiconductor, SMIC, Beijing Orient science and technology, etc.
+                        </p>
+                        <p>
+                            The school has a strong discipline. Relying on the first-level disciplines of electronic science and technology, the construction of electronic science and technology doctoral programs and post-doctoral research stations, microelectronics, and solid electronics national secondary key disciplines.
+
+                        </p>
+                        <p>
+                            The school’s major consists of Electronic science and technology, Integrated circuit design and Integration system. Graduate training includes microelectronics and solid electronics, circuits and systems, electromagnetic fields and microwave technology, integrated circuit engineering. There are also practical and scientific research institutions such as National IC talent training base, the ministry of education key laboratory of advanced ceramics and machining technology, imaging and perception (one direction), Tianjin microelectronics technology key laboratory, Tianjin integrated circuit design and technology training center, Tianjin IC design center, Integrated circuits and computing systems technology engineering center of Tianjin, Tianjin infrared imaging technology engineering center (with Tianjin shipping technical institute of physics), and Institute of electronic materials and components.
+                        </p>
 
                         <p>
-                            <img alt="" src="img/YKS.png" /><br />
-                            <strong>Prof. Yeo Kiat Seng</strong><br />
-                            IEEE Fellow, Singapore Academy of Engineering Fellow, Singapore National Academy of Science Fellow, AAIA Fellow. He was previously Associate Provost for Research and International Relations and Chairman of the University Research Board (URB) at the Singapore University of Technology and Design (SUTD). He is currently advisor (Global Partnerships) at SUTD, and distinguished professor at the School of Microelectronics, Tianjin University. Additionally, he is the Chairman of the interdisciplinary subject of integrated circuit science and engineering.<br />
-                            Primary Research Field：Device Characterization and Modelling, Low-power Circuits and Architecture, RF/mm-wave Integrated Circuit Design, Next-generation Wireless Communications.
+                            At present, the school is conforming to the national integrated circuit industry development strategy and the requirements of "new engineering" construction, focusing on the fundamental task of cultivating virtue and people, aiming at the goal of building a world-class discipline and a first-class national exemplary microelectronics college, vigorously promoting the construction and development of the school's education and teaching, scientific research, discipline construction and other undertakings, and closely strengthening industry-university-research cooperation with well-known enterprises at home and abroad.
                         </p>
-
-                </tr>
-            </tbody>
-        </table>
-
-        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Main Information about Guest Speakers</h2>
-        <br />
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/EB.jpg" width="150" height="190" /><br />
-                            <strong>Professor Emil BJÖRNSON</strong><br />
-                            EEE Fellow, Wallenberg Academy Fellow, Digital Futures Fellow, Professor of Wireless Communication at KTH, Area Editor in IEEE Signal Processing Magazine.<br />
-                            Primary Research Field：Massive MIMO，Signal processing，Wireless communication.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/LC.jpg" width="150" height="190" /><br />
-                            <strong>Professor Lin CAI</strong><br />
-                            IEEE Fellow, NSERC E.W.R. Steacie Memorial Fellow, Engineering Institute of Canada (EIC) Fellow, Professor of University of Victoria，College Member of Royal Society of Canada.<br />
-                            Primary Research Field：Ubiquitous networking，TCP/IP networking，Content/multimedia distribution networking.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/CHC.jpg" width="150" height="190" /><br />
-                            <strong> Professor CHANG Chip Hong</strong><br />
-                            IEEE Fellow, AAIA Fellow, Professor of Nanyang Technological University, Singapore.<br />
-                            Primary Research Field：Hardware Secruity and Trust, Residue Number Systems, Low-power Arithmetic Circuits, Digital Filter Design, Fault-tolerant Computing, Inexact Computing, Application-specific Digital Signal Processors, Neural Network Algorithms and Architectures.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/GYX.jpg" width="150" height="190" /><br />
-                            <strong>Professor GUO Yongxin</strong><br />
-                            IEEE Fellow, Professor of National University of Singapore, Lab Supervisors for the MMIC Modeling and Packaging Lab and the Antennas and Scattering Processing Lab., Director for the Peak of Excellence on Smart Medical Technology, NUS Suzhou Research Institute (NUSRI-SZ) and Co-Director, Center for Smart Sensing and AI, NUS Chongqing Research Institute (NUSRI-CQ).<br />
-                            Primary Research Field：Antennas and Arrays，RF Circuits and MMIC Modelling & Design.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/TRH.jpg" width="150" height="190" /><br />
-                            <strong>Professor T. Russell HSING</strong><br />
-                            IEEE Life Fellow, Fellow for the British Computer Society and SPIE, Chair Professor with National Chiao Tung University in Taiwan, and Advisory Council Member for Harvard Business Review. <br />
-                            Primary Research Field：Fog/Edge Computing & Networking, Vehicular Telematics & Services, Wireless 5G and Beyond, and Next Generation IoT Services and Applications, and Academic Spin-offs.<br />
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/KL.jpg" width="150" height="190" /><br />
-                            <strong>Professor LEUNG, Kin K</strong><br />
-                            IEEE Fellow，Professor of Electrical and Electronic Engineering, and Computing Departments，Imperial College London.<br />
-                            Primary Research Field：Wireless communications，Communication networks，Stochastic modeling and queueing theory.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/LJH.jpg" width="150" height="190" /><br />
-                            <strong>Professor LUONG Howard Cam</strong><br />
-                            IEEE Fellow, Professor of Hong Kong University of Science and Technology, Associate Editor of IEEE Solid-State Circuits Letters (SSCL) and IEEE Virtual Journal on RFIC and a technical program committee member of IEEE International Solid-State Circuits Conference (ISSCC).<br />
-                            Primary Research Field：Mixed-signal / analog integrated circuit (IC)，Radio frequency (RF)，Integrated circuits and systems，Wireless communications.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-
-                        <p>
-                            <img alt="" src="img/MPR.png" width="150" height="190" /><br />
-                            <strong>Professor Pui-In MAK </strong><br />
-                            IEEE Fellow, IET Fellow, RSC Fellow, Deputy Director (Research)
-                            Institute of Microelectronics of University of Macau, Chinese Academy of Sciences Overseas Expert.<br />
-                            Primary Research Field：Radio frequency and analog circuits.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/RRM.png" width="150" height="190" /><br />
-                            <strong>Professor Raafat MANSOUR</strong><br />
-                            IEEE Life Fellow, Canadian Academy of Engineering (CAE) Fellow, the Engineering Institute of Canada (EIC) Fellow, Professor of Electrical and Computer Engineering at the University of Waterloo, Canada Research Chair (CRC) in Micro-Nano Integrated RF Systems.<br />
-                            Primary Research Field：Tunable / Reconfigurable Microwave and Millimeter-wave circuits and subsystems ，Filters and Multiplexers ，RF MEMS Technology ，RF Phase Change Material (PCM) Technology ，Microwave and Millimeter-wave Components for 5G Communication Systems ，Superconductive Microwave and Millimeter-wave Devices.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/MXY.jpg" width="150" height="190" /><br />
-                            <strong>Professor Rui Paulo Da Silva MARTINS </strong><br />
-                            IEEE Fellow, expert in Microelectronics, Academician of Academy of Sciences of Lisbon, Portugal, Vice President (Global Affairs), Chair Professor of University of Macau, Dean of Institute of Microelectronics, University of Macau.<br />
-                            Primary Research Field：Electronics, analog and mixed signal VLSI.<br />
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-
-                        <p>
-                            <img alt="" src="img/BR.jpg" width="150" height="180" /><br />
-                            <strong>Professor Behzad RAZAVI</strong><br />
-                            IEEE Fellow, the US National Academy of Engineering Fellow, the US National Academy of Inventors Fellow, Professor of Electrical Engineering, UCLA.<br />
-                            Primary Research Field：Analog, RF, mixed-signal integrated circuit design, dual-standard RF transceivers, phase-locked systems and frequency synthesizers, A/D and D/A converters, high-speed data communication circuits.
-                        </p>
-
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/KR.jpg" width="150" height="180" /><br />
-                            <strong>Professor Kaushik ROY</strong><br />
-                            IEEE Fellow, Distinguished Professor of Electrical and Computer Engineering at Purdue University, Director of the Center for Brain-Inspired Computing (C-BRIC).<br />
-                            Primary Research Field：Cognitive algorithms, circuits and architecture for energy-efficient neuromorphic computing/ machine learning, and neuro-mimetic devices.<br />
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/BJS.png" width="150" height="190" /><br />
-                            <strong>Professor Sheu Bing-Jay</strong><br />
-                            IEEE Fellow, Chair Professor of Chang Gung University.<br />
-                            Primary Research Field：VLSI Design of Circuits & Systems, Artificial Intelligence, Machine Learning & Deep Learning， Cross-Disciplinary and Global Competitiveness, Human Wisdom.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/ssm.jpg" width="150" height="190" /><br />
-                            <strong> Professor SUN Sumei</strong><br />
-                            IEEE Fellow, Principal Scientist, Acting Deputy Executive Director (Research), and Head of the Communications and Networks Dept at the Institute for Infocomm Research (I2R), Singapore, Professor of Singapore Institute of Technology and the National University of Singapore.<br />
-                            Primary Research Field：Next-generation wireless communications, joint sensing-communication-computing-control design, and industrial internet of things.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/WZL.jpg" width="150" height="190" /><br />
-                            <strong> Professor WU Tzong Lin</strong><br />
-                            IEEE Fellow, Distinguished Professor, Associate Dean of College of Electrical Engineering and Computer Science, National Taiwan University, Editor-in-Chief of IEEE Transactions on Electromagnetic Compatibility.<br />
-                            Primary Research Field：Electromagnetic Compatibility (EMC), Chip-Package-PCB Co-Design for Signal/Power Integrity, Microwave Circuit Design, 3-D IC/Interposer Electrical Analysis and Modeling.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1" style="border-block-width:thick">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/C.png" width="150" height="190" /><br />
-                            <strong>Professor YUEN Chau</strong><br />
-                            IEEE Fellow, Professor of Nanyang Technological University, Singapore, Editor-in-Chief for Springer Nature Computer Science.<br />
-                            Primary Research Field：Infocomm Applications, 5G / 6G, Advanced Connectivity, Autonomous vehicles, Communications and Connectivity, Edge intelligence and computing, Internet of Things / IOT, Smart Facilities Management, Smart Grids, Smart Nation, Urban Mobility, Wireless Networks.
-                        </p>
-                </tr>
-            </tbody>
-        </table>
 
 
 
 
 
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="video">
+        <div class="container10">
+            <br />
+            <br />
+            <h1>Conference Objective</h1>
+            <br />
+            <hr /><hr />
+            <br />
+            <h4>
 
+                This international conference aims to discuss the open problems and present new solutions that address the challenges of future communication systems, artificial intelligence, internet-of-things, and chip design. Specifically, the role of semiconductors in future communications will be presented and how can the semiconductor and communication industry emerge stronger after the pandemic will be discussed.
 
-
-
-
-
+            </h4>
+            <br />
+            <br /><br />
+            <hr /><hr />
+            <br />
+            <br /><br />
+        </div>
 
     </div>
 

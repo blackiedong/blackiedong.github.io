@@ -11,8 +11,9 @@ nav {
     position: absolute;
     left: 0;
     width: 100vw;
-    display: flex;
-    padding: 30px 100px;
+    height:300px;
+    display: inline-flex;
+    padding: 15px 30px;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -34,12 +35,12 @@ nav {
             nav ul li a {
                 color: #11456f;
                 text-decoration: none;
-                font-size: 20px;
-                font-weight: 600;
+                font-size: 18px;
+                font-weight: 800;
                 border-radius: 15px;
                 transition: all 0.3s ease;
-                padding: 6px 15px;
-                margin-right: 50px;
+                padding: 6px 10px;
+                
             }
 
                 nav ul li a.active,
@@ -116,6 +117,7 @@ input[type="checkbox"] {
         color: #fff;
     }
 }
+
 
 
 
@@ -266,17 +268,17 @@ a.button {
 
 #video {
     position: relative;
-    margin-top:100px;
-    
+    margin-top: 100px;
     width: 100vw;
     background-color: #d6d9d9;
 }
 
 .container10 {
     position: relative;
-    margin-top: 100px;
+    margin-top: 300px;
     margin-left: 190px;
     width: 70%;
+   
 }
 
     .container10 h4 {
@@ -290,8 +292,7 @@ a.button {
 
 #intro {
     position: relative;
-    margin-top: 100px;
-   
+    margin-top: 300px;
     width: 100vw;
     background-color: #d6d9d9;
 }
@@ -637,9 +638,11 @@ table {
 
 
 /* Sponsorship 正文 */
+
+
 .container1 {
     position: relative;
-    margin-top: 200px;
+    margin-top: 250px;
     margin-left: 200px;
     width: 70%;
 }
@@ -745,7 +748,7 @@ tr {
 /*联系我们 正文 */
 .container3 {
     position: relative;
-    margin-top: 250px;
+    margin-top: 350px;
     margin-left: 200px;
     width: 75%
 }
