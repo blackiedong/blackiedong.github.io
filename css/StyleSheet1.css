@@ -9,11 +9,12 @@
 /**1. Navigation*/
 nav {
     position: absolute;
+    margin-top:200px;
     left: 0;
     width: 100vw;
     height:300px;
     display: inline-flex;
-    padding: 15px 30px;
+    padding: 15px 60px;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -35,7 +36,7 @@ nav {
             nav ul li a {
                 color: #11456f;
                 text-decoration: none;
-                font-size: 18px;
+                font-size: 28px;
                 font-weight: 800;
                 border-radius: 15px;
                 transition: all 0.3s ease;
@@ -268,16 +269,16 @@ a.button {
 
 #video {
     position: relative;
-    margin-top: 100px;
+    margin-top: 80px;
     width: 100vw;
     background-color: #d6d9d9;
 }
 
 .container10 {
     position: relative;
-    margin-top: 300px;
-    margin-left: 190px;
-    width: 70%;
+    margin-top: 180px;
+    margin-left: 250px;
+    width: 60%;
    
 }
 
@@ -292,14 +293,13 @@ a.button {
 
 #intro {
     position: relative;
-    margin-top: 300px;
+    margin-top: 190px;
     width: 100vw;
     background-color: #d6d9d9;
 }
 .container20 {
     position: relative;
     margin-top: 100px;
-   
     margin-left: 190px;
     width: 70%;
 }
@@ -643,7 +643,7 @@ table {
 .container1 {
     position: relative;
     margin-top: 250px;
-    margin-left: 200px;
+    margin-left: 280px;
     width: 70%;
 }
 
@@ -748,7 +748,7 @@ tr {
 /*联系我们 正文 */
 .container3 {
     position: relative;
-    margin-top: 350px;
+    margin-top: 200px;
     margin-left: 200px;
     width: 75%
 }
