@@ -9,16 +9,15 @@
 /**1. Navigation*/
 nav {
     position: absolute;
-    margin-top:200px;
+    margin-top: 200px;
     left: 0;
     width: 100vw;
-    height:300px;
+    height: 300px;
     display: inline-flex;
     padding: 15px 60px;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    
 }
 
 
@@ -26,7 +25,6 @@ nav {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        
     }
 
         nav ul li {
@@ -36,12 +34,11 @@ nav {
             nav ul li a {
                 color: #11456f;
                 text-decoration: none;
-                font-size: 28px;
+                font-size: 26px;
                 font-weight: 800;
                 border-radius: 15px;
                 transition: all 0.3s ease;
                 padding: 6px 10px;
-                
             }
 
                 nav ul li a.active,
@@ -53,7 +50,7 @@ nav {
     nav .menu-btn i {
         color: #11456f;
         font-size: 30px;
-        margin-top:15px;
+        margin-top: 15px;
         cursor: pointer;
         display: none;
     }
@@ -118,6 +115,8 @@ input[type="checkbox"] {
         color: #fff;
     }
 }
+
+
 
 
 
@@ -277,7 +276,7 @@ a.button {
 .container10 {
     position: relative;
     margin-top: 180px;
-    margin-left: 250px;
+    margin-left:350px;
     width: 60%;
    
 }
