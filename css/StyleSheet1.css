@@ -8,113 +8,78 @@
 
 /**1. Navigation*/
 nav {
-    position: absolute;
-    margin-top: 200px;
-    left: 0;
-    width: 100vw;
-    height: 300px;
-    display: inline-flex;
-    padding: 15px 60px;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    
+    text-align: center;
 }
 
-
     nav ul {
-        display: flex;
-        flex-wrap: wrap;
+        display:inline-flex;
+        color:#fff;
         list-style: none;
+     
     }
 
         nav ul li {
-            align-items: center;
+            text-align: center;
+            background: #0586a9;
+            width: 160px;
+            height:65px;
+            line-height:65px;
+          
         }
 
             nav ul li a {
-                color: #11456f;
+                color: #fff;
                 text-decoration: none;
-                font-size: 26px;
-                font-weight: 800;
-                border-radius: 15px;
-                transition: all 0.3s ease;
-                padding: 6px 10px;
+                font-size: 20px;
+                font-weight: 700;
+                
             }
 
-                nav ul li a.active,
-                nav ul li a:hover {
+.active {
+    background: #11456f;
+    display: block;
+  
+}
+nav ul li:hover {
                     background: #11456f;
                     color: #fff;
                 }
 
-    nav .menu-btn i {
-        color: #11456f;
-        font-size: 30px;
-        margin-top: 15px;
-        cursor: pointer;
-        display: none;
-    }
-
-input[type="checkbox"] {
-    display: none;
+.sub-menu-1 {
+    display:none;
 }
 
-
-
-@media (max-width: 1070px) {
-    nav {
-        padding: 0 40px 0 50px;
-    }
+nav ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: #0586a9;
+    margin-top: -5px;
+    margin-left: 0px;
 }
 
-@media (max-width: 1000px) {
-    nav .menu-btn i {
-        display: block;
+nav ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin:8px;
+}
+
+    nav ul li:hover .sub-menu-1 ul li{
+        width:145px;
+        
+        border-bottom: 1px dotted #fff;
+        background:transparent;
+        border-radius:0;
+        text-align:left;
+    }
+    nav ul li:hover .sub-menu-1 ul li:last-child{
+        border-bottom:none;
     }
 
-    #click:checked ~ .menu-btn i:before {
-        content: "\f00d";
-    }
-
-
-    nav ul {
-        position: absolute;
-        top: 50px;
-        left: -100%;
-        background: #111;
-        height: 90vh;
-        width: 100%;
-        text-align: center;
-        display: block;
-        transition: all 0.3s ease;
-    }
-
-    #click:checked ~ ul {
-        left: 0;
-    }
-
-    nav ul li {
-        width: 100%;
-        margin: 40px 0;
-    }
-
-        nav ul li a {
-            width: 100%;
-            margin-left: -100%;
-            display: block;
-            font-size: 20px;
-            transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        nav ul li:hover .sub-menu-1 ul li a:hover{
+            color: #11456f;
         }
 
-    #click:checked ~ ul li a {
-        margin-left: 0px;
-    }
 
-    nav ul li a.active,
-    nav ul li a:hover {
-        color: #fff;
-    }
-}
 
 
 
@@ -268,24 +233,20 @@ a.button {
 
 #video {
     position: relative;
-    margin-top: 80px;
     width: 100vw;
     background-color: #d6d9d9;
 }
 
 .container10 {
     position: relative;
-    margin-top: 180px;
-    margin-left:350px;
+    margin-top: 150px;
+    margin-left: 350px;
     width: 60%;
-   
 }
 
     .container10 h4 {
         font-size: 20px;
-        margin-top: 15px;
         text-indent: 2em;
-       
         line-height: 2;
     }
 
