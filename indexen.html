@@ -112,51 +112,11 @@
             <br />
             <h3>Date:<strong>30 Oct 2023 (Mon) to 31 Oct 2023 (Tue)</strong></h3>
             <br />
-            <h3>Venue：<strong> Student Center, Tianjin University, No. 92 Weijin Road, Nankai District, Tianjin Zip Code: 300072</strong></h3>
+            <h3>Venue：<strong> Online</strong></h3>
             <br />
             <stong><hr /></stong>
             <br />
-            <img alt="" src="img/huodong.png" style="margin-left:170px" width="700" height="350" />
-
-            <br />
-
-            <br />
-        </div>
-        <div id="map" style="margin-left:360px;width:700px; height:400px">
-
-            <script type="text/javascript"
-                    src="https://api.map.baidu.com/api?v=2.0&amp;ak=HGLWF6PzYSzXPtkS9e34UFTxgNI4YySt"></script>
-            <script>
-                /* Act on the event */
-                $('#mark').show();
-                var map = new BMap.Map('map', { lang: "en" });
-                var point = new BMap.Point(117.177697, 39.118023);// 120.73717 经度  //31.25795 纬度
-                map.centerAndZoom(point, 15);
-                map.enableScrollWheelZoom(true); // 开启鼠标滚轮缩放
-                var marker = new BMap.Marker(point); // 创建标注
-                map.addOverlay(marker); // 将标注添加到地图中
-                marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
-                var opts = {
-                    position: point, // 指定文本标注所在的地理位置
-                    offset: new BMap.Size(20, -30), //设置文本偏移量
-                };
-                var label = new BMap.Label('Student Center, Tianjin University', opts); // 创建文本标注对象
-                label.setStyle({
-                    color: '#006abe',
-                    fontSize: '16px',
-                    height: 'auto',
-                    border: '1px solid #fff',
-                    padding: '12px 12px',
-                    fontWeight: 'bold',
-                    lineHeight: '16px',
-                    fontFamily: 'SourceHanSansCN-Regular',
-                });
-                map.addOverlay(label);
-                window.setTimeout(function () {
-                    map.panTo(new BMap.Point(117.177697, 39.118023));
-                }, 2000);</script>
-            <br />
-
+          
 
         </div>
         <br />  <br />

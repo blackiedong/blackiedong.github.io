@@ -100,133 +100,86 @@
             <br />
             <br />
 
-            <h1>2023年第一届交叉学科国际会议</h1>
+            <h1>2023年第一届交叉学科国际会议(线上）</h1>
             <h2><font size="4" color="#11456f">天津|中国</font></h2><br />
             <br />
             <p><font size="5"><strong>主题：交叉学科&nbsp;——&nbsp;技术的融合(芯片设计、人工智能、物联网和未来通信)</strong></font></p>
             <br />
             <h2><font size="4">主办单位：天津大学</font></h2>
             <h2><font size="4">日期：2023年10月30日（星期一）至2023年10月31日（星期二）</font></h2>
-            <h2><font size="4">地点：天津市南开区卫津路92号天津大学(大学生活动中心)   &nbsp;&nbsp;  邮编：300072  </font></h2><br />
-
-            <br />
-            <img alt="" src="img/huodong.png" style="margin-left:10px" width="700" height="350" />
+            <h2><font size="4"></font></h2><br />
 
             <br />
 
+
+            <!--正文-->
+
+            <h2>会议主办方介绍</h2>
             <br />
+            <table border="1" cellpadding="1" cellspacing="1">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>
+                                <img alt="" src="img/TJU.jpg" width="200" height="200" /><br />
+                                <strong>天津大学介绍</strong><br />
+                            <p>天津大学是教育部直属国家重点大学，是中国第一所现代大学，是“211工程”、“985工程”首批重点建设的大学。</p>
+                            <p>官网:&nbsp;<a href="http://www.tju.edu.cn/" target="_blank">http://www.tju.edu.cn/</a></p>
+
+
+
+                    </tr>
+                </tbody>
+            </table>
+            <table border="1" cellpadding="1" cellspacing="1">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>
+                                <img alt="" src="img/collegelogo.jpg" width="200" height="200" /><br />
+                                <strong>微电子学院</strong><br />
+                            <p>
+                                天津大学微电子学院为28所国家示范性微电子学院之一，拥有两个一级学科和两个国家级一流专业建设点，始终聚焦国际科技发展前沿、聚焦国家重大战略需求、聚焦国民经济主战场，开展人才培养和前沿基础与重大工程技术研究。
+
+                            </p>
+                            <p>官网:&nbsp;<a href="http://sme.tju.edu.cn/" target="_blank">http://sme.tju.edu.cn/</a></p>
+
+
+
+
+
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div id="map" style="margin-left:360px;width:700px; height:400px">
-
-            <script type="text/javascript"
-                    src="https://api.map.baidu.com/api?v=2.0&amp;ak=HGLWF6PzYSzXPtkS9e34UFTxgNI4YySt"></script>
-            <script>
-                /* Act on the event */
-                $('#mark').show();
-                var map = new BMap.Map('map');
-                var point = new BMap.Point(117.177697, 39.118023);// 120.73717 经度  //31.25795 纬度
-                map.centerAndZoom(point, 15);
-                map.enableScrollWheelZoom(true); // 开启鼠标滚轮缩放
-                var marker = new BMap.Marker(point); // 创建标注
-                map.addOverlay(marker); // 将标注添加到地图中
-                marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
-                var opts = {
-                    position: point, // 指定文本标注所在的地理位置
-                    offset: new BMap.Size(20, -30), //设置文本偏移量
-                };
-                var label = new BMap.Label('天津大学大学生活动中心', opts); // 创建文本标注对象
-                label.setStyle({
-                    color: '#006abe',
-                    fontSize: '16px',
-                    height: 'auto',
-                    border: '1px solid #fff',
-                    padding: '12px 12px',
-                    fontWeight: 'bold',
-                    lineHeight: '16px',
-                    fontFamily: 'SourceHanSansCN-Regular',
-                });
-                map.addOverlay(label);
-                window.setTimeout(function () {
-                    map.panTo(new BMap.Point(117.177697, 39.118023));
-                }, 2000);</script>
-            <br />
-
-
-        </div>
-        <br />  <br />
-
-        <br />
-    </div>
-
-
-    <!--正文-->
-    <div class="container1">
-        <h2> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;会议主办方介绍</h2>
-        <br />
-        <table border="1" cellpadding="1" cellspacing="1">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/TJU.jpg" width="200" height="200" /><br />
-                            <strong>天津大学介绍</strong><br />
-                        <p>天津大学是教育部直属国家重点大学，是中国第一所现代大学，是“211工程”、“985工程”首批重点建设的大学。</p>
-                        <p>官网:&nbsp;<a href="http://www.tju.edu.cn/" target="_blank">http://www.tju.edu.cn/</a></p>
 
 
 
-</tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="1" cellspacing="1">
-            <tbody>
-                <tr>
-                    <td>
-                        <p>
-                            <img alt="" src="img/collegelogo.jpg" width="200" height="200" /><br />
-                            <strong>微电子学院</strong><br />
-                        <p>
-                            天津大学微电子学院为28所国家示范性微电子学院之一，拥有两个一级学科和两个国家级一流专业建设点，始终聚焦国际科技发展前沿、聚焦国家重大战略需求、聚焦国民经济主战场，开展人才培养和前沿基础与重大工程技术研究。
+        <div id="video">
+            <div class="container10">
+                <br />
+                <br />
+                <h1>会议目标</h1>
+                <br />
+                <hr /><hr />
+                <br />
+                <h4>
 
-                        </p> 
-                        <p>官网:&nbsp;<a href="http://sme.tju.edu.cn/" target="_blank">http://sme.tju.edu.cn/</a></p>
+                    本次国际会议旨在讨论未来通信系统、人工智能、物联网和芯片设计挑战的开放问题和新解决方案。具体来说，将介绍半导体在未来通信中的作用，以及疫情后半导体和通信行业如何变得更强大。
 
+                </h4>
+                <br />
+                <br /><br />
+                <hr /><hr />
+                <br />
+                <br /><br />
+            </div>
 
-
-
-
-</tr>
-            </tbody>
-        </table>
-    </div>
-
-
-
-    <div id="video">
-        <div class="container10">
-            <br />
-            <br />
-            <h1>会议目标</h1>
-            <br />
-            <hr /><hr />
-            <br />
-            <h4>
-
-                本次国际会议旨在讨论未来通信系统、人工智能、物联网和芯片设计挑战的开放问题和新解决方案。具体来说，将介绍半导体在未来通信中的作用，以及疫情后半导体和通信行业如何变得更强大。
-
-            </h4>
-            <br />
-            <br /><br />
-            <hr /><hr />
-            <br />
-            <br /><br />
         </div>
 
     </div>
 
-
-
-
+    </body>
 
 
 
